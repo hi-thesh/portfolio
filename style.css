@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.headingFont{
+  font-family: 'League Spartan', sans-serif;
+}
+
+.bodyFont{
+  font-family: 'Open Sans', sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.bgColor{
+  background-color: #d7d2cc;
+}
+
+#footer{
+    padding-bottom: 30px;
+    background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    background-size: 180% 180%;
+    animation: gradient-animation 15s ease infinite;
+}
+
+.gradient-background {
+  background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 70% 50%;
+  }
+  100% {
+    background-position: 10% 50%;
+  }
+}
+
+#navBtn{
+  border: 0;
+  font-size: x-large;
+}
+
+#banner{
+  border-radius: 50%;
+}
+
+/* Loader */
+#loader {
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 12px solid #444444;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+.center {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+@keyframes spin {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+#skills .list-group-item{
+  background: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  border: none;
+  background-size: 180% 180%;
+  pointer-events: none;
+  cursor: default;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  background-color: #304352;
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%;
+  opacity: 90%;
+}
+#arrowIcon{
+    width: fit-content;
+    height: 35px;
+    font-size: 20px;
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
