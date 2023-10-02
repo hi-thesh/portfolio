@@ -25,7 +25,7 @@ function contactMe(){
     var mailID = prompt("Enter your Email ID.");
     if(mailID === null || mailID === "")
         {
-            alert("You have not entered your Email ID. Please try again.")
+            alert("Please try again.")
         }
     else{
         alert("Thank you, we will get in touch with you shortly.");  
@@ -38,15 +38,15 @@ function about()
 }
 
 function diceWar(){
-    window.open("https://h11tesh.github.io/dicegame/");
+    window.open("https://hi-thesh.github.io/dicewar/");
 }
 
 function drumKit(){
-    window.open("https://h11tesh.github.io/drumkitv3/");
+    window.open("https://hi-thesh.github.io/drumkit/");
 }
 
 function simonGame(){
-    window.open("https://h11tesh.github.io/simongame/");
+    window.open("https://hi-thesh.github.io/simongame/");
 }
 
 // Get the button:
@@ -68,3 +68,5 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+let today = new Date().getFullYear;
